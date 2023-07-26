@@ -1,3 +1,11 @@
+# ผลที่ได้จากการ Run
+
+# Wed Jul 26 14:57:55 2023 hello 1 started
+# Wed Jul 26 14:57:55 2023 hello 2 started
+# Wed Jul 26 14:57:59 2023 hello 1 done
+# Wed Jul 26 14:57:59 2023 hello 2 done
+# Time: 4.01 sec
+
 import asyncio
 import time
 # สร้างฟังก์ชั่น hello ขึ้นมาเพื่อ Print วัน เดือน ปี เวลา
