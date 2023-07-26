@@ -1,10 +1,10 @@
 import asyncio
 import time
 
-my_compute_time = 5
-opponent_compute_time = 55
-opponents = 24
-move_pairs = 30
+my_compute_time = 1
+opponent_compute_time = 0
+opponents = 1
+move_pairs = 1
 
 
 # Again notice that I declare the main() function as a async function
@@ -33,3 +33,8 @@ if __name__ == "__main__":
     start_time = time.perf_counter()
     asyncio.run(async_io())
     print(f"Finished in {round(time.perf_counter() - start_time)} secs")
+    # คูณ 5 เดินเลย ไม่ต้องรอ Client เลยไม่ต้องนำ 55 วิมาคิด
+    # คูณ 24 คือ จำนวนกระดาน
+    # คูณ 30 คือ จำนวนการเดิน
+    # นำมาหาร 3600 เพราะ จะให้คิดเป็นชั่วโมง
+    print(f"เสร็จที่เวลา {(round(time.perf_counter() - start_time) *5 *24 *30)/3600} ชั่วโมง")
